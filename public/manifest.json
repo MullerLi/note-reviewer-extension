@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Note Reviewer",
+  "version": "1.0",
+  "description": "極簡風格的筆記與例句複習工具",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Note Reviewer"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

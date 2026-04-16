@@ -1,15 +1,18 @@
 {
   "manifest_version": 3,
   "name": "Note Reviewer",
-  "version": "1.0",
-  "description": "極簡風格的筆記與例句複習工具",
+  "version": "1.1",
+  "description": "極簡風格的筆記與例句複習工具 (右鍵儲存版)",
   "permissions": [
     "storage",
+    "contextMenus",
     "activeTab"
   ],
   "action": {
-    "default_popup": "index.html",
-    "default_title": "Note Reviewer"
+    "default_title": "Open Note Reviewer Dashboard"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
